@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="container">
+    <div class="container" id="container">
       <img src="./images/icon-star.svg" alt="icon star" class="icon-star" />
       <p class="heading">How did we do?</p>
       <p class="">
@@ -41,14 +41,14 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="container thank">
+    <div class="container thank" id="result" style="display: none">
       <img
         src="./images/illustration-thank-you.svg"
         alt="illustration thank you"
         class="illustration-thank"
       />
       <div class="result">
-        <p>
+        <p id="selectedRate">
           You selected 4
           <!-- Add rating here -->
           out of 5

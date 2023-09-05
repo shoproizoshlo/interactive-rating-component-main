@@ -21,8 +21,15 @@ for (let li of rating) {
 
 document.getElementById("submitButton").addEventListener("click", function () {
   if (selectedValue) {
-    alert("Selected item: " + selectedValue);
-    // Здесь вы можете выполнить дополнительные действия с выбранным значением
+    // Скрываем контейнер с кнопкой и элементами списка
+    document.getElementById("container").style.display = "none";
+
+    // Показываем контейнер с результатом и изображением
+    var resultContainer = document.getElementById("result");
+    resultContainer.style.display = "block";
+
+    let selectedRate = document.getElementById("selectedRate");
+    selectedRate.innerHTML = `You selected ${selectedValue} out of 5`;
   } else {
     alert("Please select an item.");
   }
