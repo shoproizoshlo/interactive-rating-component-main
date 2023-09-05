@@ -79,7 +79,11 @@ ul li:active {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
 }
-button {
+.selected {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+.submit {
   padding: 15px 40%;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -96,8 +100,7 @@ button:active {
 .thank {
   text-align: center;
 }
-.illustration-thank {
-}
+
 .result {
   margin: 25px;
   padding: 0 13%;
