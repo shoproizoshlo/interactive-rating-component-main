@@ -1,0 +1,124 @@
+/* 
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+font-family: 'Overpass', sans-serif;
+- Weights: 400, 700
+ */
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+body {
+  background-color: var(--neutral-very-dark-blue);
+}
+.container {
+  margin: 10% auto;
+  padding: 30px;
+  width: 330px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--neutral-light-grey);
+  background-color: var(--neutral-dark-blue);
+  border-radius: 30px;
+}
+/* Rating state  */
+.icon-star {
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50px;
+  padding: 15px;
+}
+.heading {
+  margin: 30px 0 10px 0;
+  color: var(--neutral-white);
+  font-size: 28px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+ul li {
+  display: inline;
+  padding: 16px 22px;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50px;
+}
+ul li:hover {
+  background-color: var(--neutral-light-grey);
+  color: var(--neutral-white);
+}
+ul li:active {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+button {
+  padding: 15px 40%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--neutral-white);
+  background-color: var(--primary-orange);
+  border-radius: 50px;
+  border: 0 solid;
+}
+button:active {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
+}
+/* Thank you state */
+.thank {
+  text-align: center;
+}
+.illustration-thank {
+}
+.result {
+  margin: 25px;
+  padding: 0 13%;
+}
+.result p {
+  padding: 0 15px;
+  line-height: 30px;
+  background-color: hsl(213, 19%, 23%);
+  border: 0 solid;
+  border-radius: 30px;
+  color: var(--primary-orange);
+}
+.text {
+  padding: 3px;
+  font-size: 14px;
+}
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

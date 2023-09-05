@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,55 +12,50 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Rating state start -->
     <div class="container">
-      <img src="./images/icon-star.svg" alt="icon star" />
+      <img src="./images/icon-star.svg" alt="icon star" class="icon-star" />
       <p class="heading">How did we do?</p>
-      <p class="text">
+      <p class="">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
-      </div>
-      <button>Submit</button>
+      <ul class="rating">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <button class="">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="container">
+    <div class="container thank">
       <img
         src="./images/illustration-thank-you.svg"
         alt="illustration thank you"
+        class="illustration-thank"
       />
-      <div>
+      <div class="result">
         <p>
-          You selected
+          You selected 4
           <!-- Add rating here -->
           out of 5
         </p>
       </div>
       <p class="heading">Thank you!</p>
-      <p class="text thanks">
+      <p class="text">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
       </p>
