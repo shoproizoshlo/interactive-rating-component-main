@@ -5,8 +5,7 @@ for (let li of rating) {
   li.addEventListener("click", function (event) {
     var listItem = event.target;
     var listItemValue = listItem.textContent;
-    selectedValue = listItemValue; // Сохраняем выбранное значение
-    // Выделение выбранного элемента (необязательно, для визуальной обратной связи)
+    selectedValue = listItemValue; 
 
     // 1. Remove Class from All Lis
     for (let li of rating) {
@@ -21,10 +20,10 @@ for (let li of rating) {
 
 document.getElementById("submitButton").addEventListener("click", function () {
   if (selectedValue) {
-    // Скрываем контейнер с кнопкой и элементами списка
+    // hide container with button and list elements
     document.getElementById("container").style.display = "none";
 
-    // Показываем контейнер с результатом и изображением
+    // show container with button and list elements
     var resultContainer = document.getElementById("result");
     resultContainer.style.display = "block";
 
